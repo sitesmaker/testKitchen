@@ -2,5 +2,131 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	
+	overflow-x: hidden;
+	background: var(--primary-bg);
+	font-size: 14px;
+	font-family: "Inter", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif !important;
+	color: var(--text-base);
+	scroll-behavior: smooth;
+}
+
+.container {
+	max-width: var(--width-lg);
+	padding-left: var(--padding-lg);
+	padding-right: var(--padding-lg);
+}
+
+section {
+	margin-top: 40px;
+}
+
+a {
+	font-family: "Inter", sans-serif;
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--text-accent);
+	transition: var(--transition);
+}
+
+.link {
+	color: var(--text-accent);
+	border-bottom: 1px solid transparent;
+	transition: var(--transition);
+}
+
+.link:hover {
+	color: var(--text-base);
+	border-bottom: 1px solid var(--text-accent);
+	transition: var(--transition);
+}
+
+button,
+.btn {
+	font-family: "Inter", sans-serif !important;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 12px 26px;
+	border-radius: 8px;
+	color: var(--white);
+	background: var(--base-btn);
+	outline: none;
+	border: 2px solid transparent;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.btn:hover {
+	transition: var(--transition);
+	background: transparent;
+	color: var(--text-base);
+	border: 2px solid var(--text-base);
+}
+
+.btn_primary {
+	background: var(--primary-btn);
+}
+
+.btn_primary:hover {
+	color: var(--primary-btn);
+	border: 2px solid var(--primary-btn);
+}
+
+.btn_success {
+	background: var(--success-btn);
+}
+
+.btn_success:hover {
+	color: var(--success-btn);
+	border: 2px solid var(--success-btn);
+}
+
+.swiper-container {
+	position: relative;
+}
+
+.swal2-confirm,
+.swal2-title {
+	color: var(--black);
+}
+
+.swal2-title {
+	font-size: 22px;
+	line-height: 27px;
+}
+
+.swal2-html-container {
+	color: var(--text-base);
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.swal2-popup {
+	border-radius: 12px;
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		padding-left: var(--padding-md);
+		padding-right: var(--padding-md);
+	}
+
+	section {
+		margin-top: 22px;
+	}
+
+	button,
+	.btn {
+		padding: 10px 20px;
+		font-size: 15px;
+		line-height: 18px;
+	}
 }

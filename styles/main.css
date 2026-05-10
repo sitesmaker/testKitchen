@@ -1,2 +1,14 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* General styles */
 @import "./vars.css";
 @import "./general.css";
+@import "./text.css";
+@import "./form.css";
+
+/* Elements */
+@import "./components/header.css";
+@import "./components/hero.css";
+@import "./components/food-slider.css";
+@import "./components/collapse.css";

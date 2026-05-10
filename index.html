@@ -5,12 +5,154 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Уютная кухня</title>
+	<link rel="icon" type="image/png" href="./favicon.png">
 	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
+	<div class="container">
+		<header class="header">
+			<div class="header-logo">
+				<div class="header-logo__img">
+					<img src="./images/logo.svg" alt="Logo">
+				</div>
+				<div class="header-logo__name">
+					Уютная <span class="accent">кухня</span>
+				</div>
+			</div>
+			<nav class="header-menu">
+				<a href="#menu">Меню</a>
+				<a href="#booking">К бронированию</a>
+			</nav>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="hero__img">
+					<img src="./images/heroImg.jpg" alt="">
+				</div>
+				<h1>Домашняя кухня в центре города</h1>
+				<p>
+					Бронируйте стол онлайн — мы подготовим всё к вашему приходу.
+				</p>
+				<a href="#booking" class="btn btn_primary">
+					Забронировать стол
+				</a>
+			</section>
+			<section class="food-slider" id="menu">
+				<p>Нравится атмосфера? <a href="#" class="link">перейти к форме бронирования</a></p>
+				<div class="swiper">
+					<div class="swiper-container" data-swipe-desktop="3" data-swiper-mobile="1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./images/food-slider/slide-1.png" alt="Слайд-1"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-2.png" alt="Слайд-2"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-3.png" alt="Слайд-3"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-4.png" alt="Слайд-4"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-5.png" alt="Слайд-5"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-6.png" alt="Слайд-6"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-7.png" alt="Слайд-7"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-8.png" alt="Слайд-8"></div>
+							<div class="swiper-slide"><img src="./images/food-slider/slide-9.png" alt="Слайд-9"></div>
+						</div>
 
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="swiper-button-prev">
+						<svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5.21589 10.4659H3.44316L-2.21133e-05 5.35224V5.18179H1.94316L5.21589 10.4659ZM5.21589 -2.81334e-05L1.94316 5.28406H-2.21133e-05V5.11361L3.44316 -2.81334e-05H5.21589Z"
+								fill="#2C2416" />
+						</svg>
+					</div>
+					<div class="swiper-button-next">
+						<svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5.21589 10.4659H3.44316L-2.21133e-05 5.35224V5.18179H1.94316L5.21589 10.4659ZM5.21589 -2.81334e-05L1.94316 5.28406H-2.21133e-05V5.11361L3.44316 -2.81334e-05H5.21589Z"
+								fill="#2C2416" />
+						</svg>
+					</div>
+				</div>
+			</section>
+			<section class="collapse">
+				<h2>Частые вопросы</h2>
+				<div class="collapse-list">
+					<div class="collapse-item">
+						<button class="collapse-question">
+							<span>Часы работы</span>
+							<svg class="collapse-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="2">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg>
+						</button>
+						<div class="collapse-answer">
+							<p>Пн–Чт 10:00–22:00 · Пт–Сб 10:00–23:00 · Вс 11:00–21:00</p>
+						</div>
+					</div>
+
+					<div class="collapse-item">
+						<button class="collapse-question">
+							<span>Как добраться</span>
+							<svg class="collapse-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="2">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg>
+						</button>
+						<div class="collapse-answer">
+							<p>м. Тверская, 5 минут пешком. Вход со двора, домофон 42.</p>
+						</div>
+					</div>
+
+					<div class="collapse-item">
+						<button class="collapse-question">
+							<span>Детям и особые пожелания</span>
+							<svg class="collapse-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+								stroke-width="2">
+								<polyline points="6 9 12 15 18 9"></polyline>
+							</svg>
+						</button>
+						<div class="collapse-answer">
+							<p>Детское меню и стульчики. Сообщите об аллергиях в форме бронирования.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="booking" id="booking" style="margin-bottom: 40px;">
+				<form action="/" method="post" class="form" id="bookingForm">
+					<h2>Бронирование стола</h2>
+					<p>Заполните поля — перезвоним для подтверждения.</p>
+					<div class="form-group">
+						<label for="firstName">Имя</label>
+						<input type="text" name="firstName" id="firstName">
+						<div class="error-message"></div>
+					</div>
+					<div class="form-group">
+						<label for="lastName">Фамилия</label>
+						<input type="text" name="lastName" id="lastName">
+						<div class="error-message"></div>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email">
+						<div class="error-message"></div>
+					</div>
+					<div class="form-group">
+						<label for="phone">Телефон</label>
+						<input type="text" name="phone" id="phone">
+						<div class="error-message"></div>
+					</div>
+					<button type="submit" class="btn btn_success">Отправить</button>
+				</form>
+			</section>
+		</main>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/inputmask.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./scripts/slider.js"></script>
+	<script src="./scripts/collapse.js"></script>
+	<script src="./scripts/bookingForm.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 20px;
+}
+
+.hero__img {
+	border-radius: 12px;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+.hero p {
+	font-size: 17px;
+	line-height: 26px;
+}
+
+@media screen and (max-width: 767px) {
+	.hero {
+		row-gap: 14px;
+	}
+
+	.hero>p {
+		font-size: 15px;
+		line-height: 22px;
+	}
+
+	.hero__img {
+		max-height: 200px;
+		height: 100%;
+	}
+
+	.hero__img img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		aspect-ratio: 2/1;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.hero__img img {
+		aspect-ratio: 3/2;
+	}
+}

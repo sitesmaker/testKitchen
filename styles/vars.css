@@ -8,7 +8,6 @@
 	--dark: #5C5248;
 	--beige-1: #E8DFD4;
 	--beige-2: #E0D8CE;
-
 	--orange: #C45C3E;
 	--green: #5C6B4A;
 	/* Цвета элементов */
@@ -20,4 +19,11 @@
 	--primary-btn: var(--orange);
 	--success-btn: var(--green);
 	--base-btn: var(--beige-1);
+	/* Остальное */
+	--width-lg: 960;
+	--width-md: 767px;
+	--padding-lg: 48px;
+	--padding-md: 20px;
+	--transition: all ease-in-out .3s;
+	--border: 1px solid var(--stroke-color);
 }
