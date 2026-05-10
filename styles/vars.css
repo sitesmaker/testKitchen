@@ -1,0 +1,23 @@
+:root {
+	/* Фон */
+	--primary-bg: #FAF6F1;
+	--second-bg: #F3EDE6;
+	/* Цвета */
+	--white: #FFFFFF;
+	--black: #2C2416;
+	--dark: #5C5248;
+	--beige-1: #E8DFD4;
+	--beige-2: #E0D8CE;
+
+	--orange: #C45C3E;
+	--green: #5C6B4A;
+	/* Цвета элементов */
+	--text-base: var(--dark);
+	--text-title: var(--black);
+	--text-accent: var(--orange);
+	--stroke-color: var(--beige-2);
+	/* Цвета кнопок */
+	--primary-btn: var(--orange);
+	--success-btn: var(--green);
+	--base-btn: var(--beige-1);
+}
